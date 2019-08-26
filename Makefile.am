@@ -8,7 +8,7 @@ MOSTLYCLEANFILES = \
 	gtk-3.0/gtk-contained.css \
 	gtk-3.0/gtk-contained-dark.css
 
-themedir = $(datadir)/themes/Greybird
+themedir = $(datadir)/themes/GreybirdX2
 
 all: clean compile
 
@@ -22,9 +22,9 @@ compile:
 install-data-hook:
 	$(MKDIR_P)				$(DESTDIR)$(themedir)
 	$(MKDIR_P)				$(DESTDIR)$(themedir)/gtk-3.0
-	$(MKDIR_P)				$(DESTDIR)$(datadir)/themes/Greybird-bright/xfce-notify-4.0
-	$(MKDIR_P)				$(DESTDIR)$(datadir)/themes/Greybird-accessibility/xfwm4
-	$(MKDIR_P)				$(DESTDIR)$(datadir)/themes/Greybird-compact/xfwm4
+	$(MKDIR_P)				$(DESTDIR)$(datadir)/themes/GreybirdX2-bright/xfce-notify-4.0
+	$(MKDIR_P)				$(DESTDIR)$(datadir)/themes/GreybirdX2-accessibility/xfwm4
+	$(MKDIR_P)				$(DESTDIR)$(datadir)/themes/GreybirdX2-compact/xfwm4
 
 	cp -r $(srcdir)/gtk-2.0			$(DESTDIR)$(themedir)
 	cp -r $(srcdir)/gtk-3.0			$(DESTDIR)$(themedir)
@@ -35,10 +35,10 @@ install-data-hook:
 	cp -r $(srcdir)/unity			$(DESTDIR)$(themedir)
 	cp -r $(srcdir)/gnome-shell		$(DESTDIR)$(themedir)
 	cp -r $(srcdir)/xfce-notify-4.0		$(DESTDIR)$(themedir)
-	cp -r $(srcdir)/xfce-notify-4.0_bright/* $(DESTDIR)$(datadir)/themes/Greybird-bright/xfce-notify-4.0
+	cp -r $(srcdir)/xfce-notify-4.0_bright/* $(DESTDIR)$(datadir)/themes/GreybirdX2-bright/xfce-notify-4.0
 	cp -r $(srcdir)/xfwm4			$(DESTDIR)$(themedir)
-	cp -r $(srcdir)/xfwm4-a11y/*		$(DESTDIR)$(datadir)/themes/Greybird-accessibility/xfwm4
-	cp -r $(srcdir)/xfwm4-compact/*		$(DESTDIR)$(datadir)/themes/Greybird-compact/xfwm4
+	cp -r $(srcdir)/xfwm4-a11y/*		$(DESTDIR)$(datadir)/themes/GreybirdX2-accessibility/xfwm4
+	cp -r $(srcdir)/xfwm4-compact/*		$(DESTDIR)$(datadir)/themes/GreybirdX2-compact/xfwm4
 	cp    $(srcdir)/index.theme		$(DESTDIR)$(themedir)
 	cp    $(srcdir)/ubiquity-panel-bg.png	$(DESTDIR)$(themedir)
 	cp    $(srcdir)/Greybird.emerald	$(DESTDIR)$(themedir)
@@ -46,6 +46,6 @@ install-data-hook:
 
 uninstall-hook:
 	test -e $(DESTDIR)$(themedir) && rm -rfv $(DESTDIR)$(themedir)
-	test -e $(DESTDIR)$(datadir)/themes/Greybird-accessibility && rm -rfv $(DESTDIR)$(datadir)/themes/Greybird-accessibility
-	test -e $(DESTDIR)$(datadir)/themes/Greybird-bright && rm -rfv $(DESTDIR)$(datadir)/themes/Greybird-bright
-	test -e $(DESTDIR)$(datadir)/themes/Greybird-compact && rm -rfv $(DESTDIR)$(datadir)/themes/Greybird-compact
+	test -e $(DESTDIR)$(datadir)/themes/GreybirdX2-accessibility && rm -rfv $(DESTDIR)$(datadir)/themes/GreybirdX2-accessibility
+	test -e $(DESTDIR)$(datadir)/themes/GreybirdX2-bright && rm -rfv $(DESTDIR)$(datadir)/themes/GreybirdX2-bright
+	test -e $(DESTDIR)$(datadir)/themes/GreybirdX2-compact && rm -rfv $(DESTDIR)$(datadir)/themes/GreybirdX2-compact

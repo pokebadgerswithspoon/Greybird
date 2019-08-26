@@ -1,5 +1,5 @@
 # Author: Simon Steinbeiß
-# Theme: Greybird
+# Theme: GreybirdX2
 # based on "Bluebird" by Simon Steinbeiß and Pasi Lallinaho
 # Description: As is the original theme, this theme is 100% free and open source.
 
@@ -11,7 +11,7 @@ gtk-color-scheme	= "panel_bg:#686868" # Panel bg color
 gtk-color-scheme	= "fm_color:#F7F7F7" # Color used in Nautilus and Thunar.
 gtk-color-scheme	= "bg_color_dark:#686868\ntext_color_dark:#FFF"
 
-gtk-icon-sizes          = "panel-applications-menu=24,24:panel-menu=24,24:panel=16,16:gtk-button=16,16"
+gtk-icon-sizes          = "panel-applications-menu=32,32:panel-menu=32,32:panel=24,24:gtk-button=24,24"
 gtk-button-images	= 1					# Disables icons for buttons with text
 gtk-toolbar-style	= 0					# Disables text in toolbar
 gtk-auto-mnemonics	= 1					# Disables ugly lines under menu items
@@ -47,20 +47,20 @@ style "default"
 
 	GtkNotebook		::tab-overlap				=-2
 
-	GtkProgressBar		::min-vertical-bar-width		= 10
-	GtkProgressBar		::min-horizontal-bar-height		= 10
+	GtkProgressBar		::min-vertical-bar-width		= 18
+	GtkProgressBar		::min-horizontal-bar-height		= 18
 
 	GtkRange		::trough-border				= 2
-	GtkRange		::slider-width				= 9
+	GtkRange		::slider-width				= 16
 	GtkRange		::stepper-size				= 13
 	GtkRange		::stepper_spacing			= 0
 
 	GtkScale		::slider-length				= 15
-	GtkScale		::slider-width				= 15
+	GtkScale		::slider-width				= 27
 	GtkScale		::trough-side-details			= 1
 
 	GtkScrollbar		::min-slider-length			= 50
-	GtkScrollbar		::slider-width				= 9
+	GtkScrollbar		::slider-width				= 16
 	#GtkScrollbar		::activate-slider			= 1
 	GtkScrollbar		::trough-border				= 3
 	GtkScrollbar		::has-backward-stepper 			= 0
@@ -80,8 +80,8 @@ style "default"
 	GtkWidget		::focus-line-width			= 1
 	GtkWidget		::focus-padding				= 0
 
-	GtkWindow		::resize-grip-height			= 13
-        GtkWindow		::resize-grip-width			= 13
+	GtkWindow		::resize-grip-height			= 23
+        GtkWindow		::resize-grip-width			= 23
 
 	xthickness = 1
 	ythickness = 1
@@ -351,8 +351,8 @@ style "separator-menu-item"
 	GtkSeparatorMenuItem::horizontal-padding = 2
 
 	GtkWidget::wide-separators	= 1
-	GtkWidget::separator-width	= 1
-	GtkWidget::separator-height	= 7
+	GtkWidget::separator-width	= 3
+	GtkWidget::separator-height	= 12
 }
 
 style "treeview"
@@ -851,8 +851,8 @@ style "toolbar-separator" {
 
 	GtkVSeparator::vertical-padding = 0
 	GtkWidget::wide-separators = 1
-	GtkWidget::separator-width = 7
-	GtkWidget::separator-height = 1
+	GtkWidget::separator-width = 12
+	GtkWidget::separator-height = 2
 
 
 	engine "murrine" {
@@ -890,10 +890,10 @@ style "xfwm-tabwin"
 {
 	Xfwm4TabwinWidget::border-width = 0
 	Xfwm4TabwinWidget::icon-size = 64
-	Xfwm4TabwinWidget::listview-icon-size = 24
+	Xfwm4TabwinWidget::listview-icon-size = 32
 	Xfwm4TabwinWidget::preview-size = 128
 	Xfwm4TabwinWidget::alpha = 0.8
-	Xfwm4TabwinWidget::border-radius = 12
+	Xfwm4TabwinWidget::border-radius = 21
 
 	bg[NORMAL]	= shade (0.15, @text_color)
 	bg[ACTIVE]	= shade (0.65, @selected_bg_color)
@@ -905,7 +905,7 @@ style "xfwm-tabwin"
 	fg[PRELIGHT]	= @base_color
 
 	engine "murrine" {
-		roundness	    = 6
+		roundness	    = 10
 		textstyle = 1
 		text_shade = 0.25
 	}

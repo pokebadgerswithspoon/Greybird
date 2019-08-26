@@ -1,52 +1,23 @@
-Greybird
+Copyright and kudos go to shimmer project maintainers: https://github.com/shimmerproject/Greybird.
+
+Original README: https://github.com/shimmerproject/Greybird/blob/master/README.md
+
+
+
+GreybirdX2
 =======
-Desktop Suite for Xfce
-----------------------
-URL: https://github.com/shimmerproject/Greybird
+Scalable version of [Greybird](https://github.com/shimmerproject/Greybird).
+Adds an option to scale GTK3 part of the theme when you feel decorations are too large. Be warned that scale might break all the pixel accuracy efforts made by Greybird maintainers.
 
-Copyright 2009–2017 Simon Steinbeiß, Satyajit Sahoo, Pasi Lallinaho
+Use cases:
 
-Greybird is dual-licensed as GPLv2 or later and CC-BY-SA 3.0 or later.
+* UHD (4,5k,retina) screen with large diagonal: set display scale to 2 and scale down theme and fonts (x0.9)
+* to fight blurry xwayland in swaywm: set display scale to 1 and scale up the theme and fonts (1.75)
 
-Greybird is the default theme in Xubuntu 11.04 onwards.
+Howto:
 
-The Greybird desktop suite includes:
-- Gtk+2 theme
-- Gtk+3 theme
-- Xfwm4 themes (normal and compact)
-- xfce-notifyd theme (dark and bright)
-- Emerald theme
-- Metacity theme
-- Mutter theme
-- Gnome Shell theme
-- Plank theme
-- Unity support
-
-Dependencies for Gtk+2 support:
-- gtk2-engines-murrine (>= 0.90)
-
-The Gtk+3 theme uses the builtin engine and consequently has no dependencies.
-
-### Build dependencies ###
-Debian or Ubuntu:
-
-`sudo apt install autoconf libgdk-pixbuf2.0-dev libglib2.0-bin librsvg2-dev ruby-sass`sassc
-
-Fedora:
-
-`dnf install gdk-pixbuf2-devel librsvg2-devel rubygem-sass`
-
-### Install without admin privileges
-
-```
-./autogen.sh --prefix=$HOME/.local
-make
-make install
-```
-
-### Install for all users
-
-```
-./autogen.sh
-make
-sudo make install
+1) `${EDITOR:-vi} gtk-3.0/_common.scss`
+2) localte `-px` function
+3) set scale
+4) build the theme as [original README](https://github.com/shimmerproject/Greybird/blob/master/README.md) tells to
+5) Your theme is called `GreybirdX2`
