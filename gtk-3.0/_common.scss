@@ -3006,7 +3006,7 @@ scale {
                                                      (top, left, right),
                                                      (bottom, right, left) {
       &.#{$marks_class} {
-        margin-#{$marks_margin}: $_marks_distance;
+        margin-#{$marks_margin}: -px($_marks_distance);
         margin-#{$marks_pos}: - -px($_marks_distance + $_marks_length);
       }
     }
@@ -3017,7 +3017,7 @@ scale {
                                                      (top, left, right),
                                                      (bottom, right, left) {
       &.#{$marks_class} {
-        margin-#{$marks_margin}: $_marks_distance;
+        margin-#{$marks_margin}: -px($_marks_distance);
         margin-#{$marks_pos}: - -px($_marks_distance + $_marks_length - 3);
       }
     }
